@@ -33,6 +33,9 @@
       --dark: #110000;
       --card-bg: rgba(30, 0, 0, 0.7);
       --border: rgba(200, 0, 0, 0.35);
+      --green: #0f0;
+      --green-bright: #39ff14;
+      --green-glow: rgba(57, 255, 20, 0.5);
     }
 
     html {
@@ -642,6 +645,18 @@
       color: #ff8c42;
       text-shadow: 0 0 14px rgba(255, 140, 66, 0.5);
       border-bottom-color: rgba(255, 140, 66, 0.3);
+    }
+
+    .events-category-label.special-label {
+      color: var(--green-bright);
+      text-shadow: 0 0 14px var(--green-glow);
+      border-bottom-color: rgba(57, 255, 20, 0.3);
+      animation: greenPulse 2s infinite;
+    }
+
+    @keyframes greenPulse {
+      0%, 100% { text-shadow: 0 0 14px var(--green-glow); }
+      50% { text-shadow: 0 0 25px var(--green-bright); }
     }
 
     .cat-icon {
@@ -1368,7 +1383,7 @@
     <!-- Stats -->
     <div class="stats-bar">
       <div class="stat-item">
-        <div class="stat-num">5+</div>
+        <div class="stat-num">7+</div>
         <div class="stat-label">Events</div>
       </div>
       <div class="stat-item">
@@ -1443,16 +1458,14 @@
     </div>
     <div class="rules-container fade-up">
       <ul class="rules-list">
-        <li>Each student can participate in 1 Technical event and 1 Non-Technical event.</li>
-        <li>Students can choose one additional event (Technical or Non-Technical) as an optional third event.</li>
+        <li>Each student can participate in 2 Technical event and 2 Non-Technical event.</li>
+       <li>Food, refreshments, and a registration kit will be provided for all participants.</li>
         <li>The registration fee is ₹200 per head.</li>
         <li>Participants must bring their college ID card for verification.</li>
 
         <li>Participants should follow the instructions of the event coordinators and maintain discipline.</li>
-        <li>Food, refreshments, and a registration kit will be provided for all participants.</li>
-        <li>Events will be conducted according to the given pairs. Technical and Non-Technical events in each pair will
-          run at the same time, and participants can choose to participate in either the Technical or the Non-Technical
-          event from that pair..</li>
+       
+        
       </ul>
     </div>
   </section>
@@ -1463,6 +1476,22 @@
       <span class="section-tag">// Competitions</span>
       <h2 class="section-title">EVENTS & CHALLENGES</h2>
       <div class="section-divider"></div>
+    </div>
+
+    <!-- Special Event -->
+    <div class="events-category-label special-label fade-up">
+      <span class="cat-icon">🌱</span> SPECIAL EVENT
+    </div>
+    <div class="events-grid" style="display: flex; justify-content: center; margin-bottom: 3rem;">
+      <div class="event-card fade-up video-bg-card" style="border-color: var(--green-bright); max-width: 400px; width: 100%;">
+        <div class="video-bg-wrapper" style="opacity: 0.8;">
+          <img src="green_eco_tech_wave_1773658158110.png" alt="GreenWave" style="width: 100%; height: 100%; object-fit: cover; filter: saturate(1.5);">
+        </div>
+        <div class="event-category" style="color: var(--green-bright); margin-top: 0;">Ecological Tech</div>
+        <div class="event-name" style="color: var(--white); text-shadow: 0 0 10px var(--green-bright);">GreenWave</div>
+        <div class="event-desc" style="color: #e0ffe0;">A premier challenge dedicated to sustainable innovation and green technology solutions.</div>
+        <div class="event-tag" style="background: rgba(0, 255, 0, 0.2); border-color: var(--green-bright); color: #afffaf;">Exclusive</div>
+      </div>
     </div>
     <!-- Technical Events -->
     <div class="events-category-label fade-up">
@@ -1672,13 +1701,16 @@
       <div class="contact-card fade-up">
         <div class="icon">📞</div>
         <h4>Student Coordinators</h4>
-        <p>Bharath <br><a href="https://wa.me/919361163518" target="_blank"
+        <p>Sabarivasan B <br><a href="https://wa.me/919790369866" target="_blank"
+            style="color: inherit; text-decoration: none; transition: color 0.3s;"
+            onmouseover="this.style.color='var(--red-bright)'" onmouseout="this.style.color='inherit'">+91 97903
+            69866</a><br> Manojkumar M <br><a href="https://wa.me/919159859435" target="_blank"
+            style="color: inherit; text-decoration: none; transition: color 0.3s;"
+            onmouseover="this.style.color='var(--red-bright)'" onmouseout="this.style.color='inherit'">+91 91598
+            59435</a><br> Bharath T <br><a href="https://wa.me/919361163518" target="_blank"
             style="color: inherit; text-decoration: none; transition: color 0.3s;"
             onmouseover="this.style.color='var(--red-bright)'" onmouseout="this.style.color='inherit'">+91 93611
-            63518</a><br> Bhavadharani <br><a href="https://wa.me/919043445487" target="_blank"
-            style="color: inherit; text-decoration: none; transition: color 0.3s;"
-            onmouseover="this.style.color='var(--red-bright)'" onmouseout="this.style.color='inherit'">+91 90434
-            45487</a></p>
+            63518</a></p>
       </div>
       <div class="contact-card fade-up">
         <div class="icon">👨‍🏫</div>
