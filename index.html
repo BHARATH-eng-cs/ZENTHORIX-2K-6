@@ -655,8 +655,15 @@
     }
 
     @keyframes greenPulse {
-      0%, 100% { text-shadow: 0 0 14px var(--green-glow); }
-      50% { text-shadow: 0 0 25px var(--green-bright); }
+
+      0%,
+      100% {
+        text-shadow: 0 0 14px var(--green-glow);
+      }
+
+      50% {
+        text-shadow: 0 0 25px var(--green-bright);
+      }
     }
 
     .cat-icon {
@@ -1371,7 +1378,8 @@
     </div>
 
     <div class="hero-cta">
-      <a href="https://registration.zenthorix2k26.in/" target="_blank" rel="noopener noreferrer" class="btn-shock" id="hero-register-btn">
+      <a href="https://registration.zenthorix2k26.in/" target="_blank" rel="noopener noreferrer" class="btn-shock"
+        id="hero-register-btn">
         <svg class="bolt-svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
           <path d="M13 2L3 14h9l-1 8 10-12h-9z" />
         </svg>
@@ -1458,14 +1466,14 @@
     </div>
     <div class="rules-container fade-up">
       <ul class="rules-list">
-        
-       <li>Food, refreshments, and a registration kit will be provided for all participants.</li>
+
+        <li>Food, refreshments, and a registration kit will be provided for all participants.</li>
         <li>The registration fee is ₹200 per head.</li>
         <li>Participants must bring their college ID card for verification.</li>
 
         <li>Participants should follow the instructions of the event coordinators and maintain discipline.</li>
-       
-        
+
+
       </ul>
     </div>
   </section>
@@ -1483,14 +1491,18 @@
       <span class="cat-icon">🌱</span> SPECIAL EVENT
     </div>
     <div class="events-grid" style="display: flex; justify-content: center; margin-bottom: 3rem;">
-      <div class="event-card fade-up video-bg-card" style="border-color: var(--green-bright); max-width: 400px; width: 100%;">
+      <div class="event-card fade-up video-bg-card"
+        style="border-color: var(--green-bright); max-width: 400px; width: 100%;">
         <div class="video-bg-wrapper" style="opacity: 0.8;">
-          <img src="green_eco_tech_wave_1773658158110.png" alt="GreenWave" style="width: 100%; height: 100%; object-fit: cover; filter: saturate(1.5);">
+          <img src="green_eco_tech_wave_1773658158110.png" alt="GreenWave"
+            style="width: 100%; height: 100%; object-fit: cover; filter: saturate(1.5);">
         </div>
         <div class="event-category" style="color: var(--green-bright); margin-top: 0;">Ecological Tech</div>
         <div class="event-name" style="color: var(--white); text-shadow: 0 0 10px var(--green-bright);">GreenWave</div>
-        <div class="event-desc" style="color: #e0ffe0;">A premier challenge dedicated to sustainable innovation and green technology solutions.</div>
-        <div class="event-tag" style="background: rgba(0, 255, 0, 0.2); border-color: var(--green-bright); color: #afffaf;">Exclusive</div>
+        <div class="event-desc" style="color: #e0ffe0;">A premier challenge dedicated to sustainable innovation and
+          green technology solutions.</div>
+        <div class="event-tag"
+          style="background: rgba(0, 255, 0, 0.2); border-color: var(--green-bright); color: #afffaf;">Exclusive</div>
       </div>
     </div>
     <!-- Technical Events -->
@@ -1689,14 +1701,14 @@
         <h4>Venue</h4>
         <p>Department of Computer Science & Engineering<br>R.V.S College Of Engineering, Tamil Nadu</p>
         <a href="https://maps.app.goo.gl/A2UpBZamE4U5kvdE7" target="_blank" rel="noopener noreferrer"
-           style="color: var(--red-bright); text-decoration: none; font-size: 0.8rem; margin-top: 0.5rem; display: inline-block; letter-spacing: 1px;">
-           VIEW ON GOOGLE MAPS →
+          style="color: var(--red-bright); text-decoration: none; font-size: 0.8rem; margin-top: 0.5rem; display: inline-block; letter-spacing: 1px;">
+          VIEW ON GOOGLE MAPS →
         </a>
       </div>
       <div class="contact-card fade-up">
         <div class="icon">📅</div>
         <h4>Date</h4>
-        <p>2nd April 2026<br>9:00 AM – 4:00 PM</p>
+        <p>11th April 2026<br>9:00 AM – 4:00 PM</p>
       </div>
       <div class="contact-card fade-up">
         <div class="icon">📞</div>
@@ -1717,10 +1729,10 @@
         <h4>Staff Coordinator</h4>
         <p>Sripriya S<br><a href="https://wa.me/919876543210" target="_blank"
             style="color: inherit; text-decoration: none; transition: color 0.3s;"
-            onmouseover="this.style.color='var(--red-bright)'" onmouseout="this.style.color='inherit'">+91 98765 
+            onmouseover="this.style.color='var(--red-bright)'" onmouseout="this.style.color='inherit'">+91 98765
             43210</a><br> Lavanya S<br><a href="https://wa.me/919123456789" target="_blank"
             style="color: inherit; text-decoration: none; transition: color 0.3s;"
-            onmouseover="this.style.color='var(--red-bright)'" onmouseout="this.style.color='inherit'">+91 91234 
+            onmouseover="this.style.color='var(--red-bright)'" onmouseout="this.style.color='inherit'">+91 91234
             56789</a></p>
       </div>
       <div class="contact-card fade-up">
@@ -1842,7 +1854,7 @@
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
     // ─── COUNTDOWN TIMER ───
-    const eventDate = new Date('2026-04-02T09:00:00');
+    const eventDate = new Date('2026-04-11T09:00:00');
 
     function updateCountdown() {
       const now = new Date();
@@ -1902,7 +1914,7 @@
 
     // ─── VIDEO OBSERVER & CONTROLLER ───
     const allVideos = document.querySelectorAll('.video-bg-card video');
-    
+
     // Function to pause all videos
     const pauseAllVideos = () => {
       allVideos.forEach(v => {
@@ -1913,7 +1925,7 @@
 
     const videoObserver = new IntersectionObserver((entries) => {
       let activeVideo = null;
-      
+
       entries.forEach(entry => {
         const video = entry.target.querySelector('video');
         if (!video) return;
@@ -1934,14 +1946,14 @@
           activeVideo.play();
         });
       }
-    }, { 
+    }, {
       threshold: 0.7,
       rootMargin: '0px'
     });
 
     document.querySelectorAll('.video-bg-card').forEach(card => {
       videoObserver.observe(card);
-      
+
       // Desktop Hover Support
       card.addEventListener('mouseenter', () => {
         pauseAllVideos();
@@ -1975,4 +1987,3 @@
     });
   </script>
 </body>
-
